@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+  padding:  0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';  
+}
+body{
+    background-color: grey;
+}
+.cabecalho-principal{
+    background-color: #e60022;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 10%;
+}
+.abre-menu{
+    font-size: 24px;
+    cursor: pointer;
+}
+.imagem-logo img{
+    width: 225px;
+}
+.cabecalho-menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-weight: 600;
+}
+.cabecalho-menu a{
+    text-decoration: none;
+    color: white;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(180,180,180,0.5);
+    position: absolute;
+    z-index: 1;
+}
+.menu-lateral{
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    z-index: 2;
+}
+.cabecalho-menu-lateral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 10px 20px;
+}
+.logo-menu-lateral img{
+    width: 125px;
+    background-color: #e60022;
+    border: 4px solid #e60022;
+    border-radius: 4px;
+}
+.fecha-menu{
+    cursor: pointer;
+    font-size: 20px;
+}
+.assine-menu-lateral button{
+    display: block;
+    width: 85%;
+    margin: 20px auto;
+    height: 38px;
+    border-radius: 0;
+    border: none;
+    background-color: #e60022;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.assine-menu-lateral button:hover{
+    background-color: rgb(255,50,50);
+}
+.assine-menu-lateral{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.assine-menu-lateral a {
+    color: grey;
+    font-weight: 600;
+
+}
+.lista-menu-lateral a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+}
+.lista-menu-lateral li{
+    border-left: 5px solid transparent;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+}
+.lista-menu-lateral li:hover{
+    border-left: 5px solid #e60022;
+    background-color: rgba(100,100,100,0.2);
+}
+.linha + .linha li {
+    border-top: none;
+}
