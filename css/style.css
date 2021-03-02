@@ -48,6 +48,7 @@ body{
     position: absolute;
     overflow: auto;
     z-index: 2;
+    display: none;
 }
 .cabecalho-menu-lateral{
     display: flex;
@@ -109,4 +110,32 @@ body{
 }
 .linha + .linha li {
     border-top: none;
+}
+@keyframes anm-abre{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 600px;
+    }
+}
+@keyframes anm-fecha{
+    from{
+        width: 600px;
+    }
+    to{
+        width: 0px;
+    }
+}
+.animacao-fecha{
+    animation-name: anm-fecha;
+    animation-duration: 18s;
+    animation-fill-mode: both;
+    display: block!important;
+   }
+.animacao-abre{
+ animation-name: anm-abre;
+ animation-duration: 18s;
+ animation-fill-mode: both;
+ display: block!important;
 }
